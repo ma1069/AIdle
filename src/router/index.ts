@@ -3,7 +3,7 @@ import Home from '@/views/Home.vue'
 import About from '@/views/About.vue'
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/AIdle/'),
   routes: [
     {
       path: '/',

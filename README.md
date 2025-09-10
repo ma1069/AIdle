@@ -1,6 +1,13 @@
-[![Deploy to GitHub Pages](https://github.com/ma1069/AIdle/actions/workflows/deploy.yml/badge.svg)](https://github.com/ma1069/AIdle/actions/workflows/deploy.yml)
-
 # Vue 3 Frontend App
+
+[![CI](https://github.com/ma1069/AIdle/actions/workflows/ci.yml/badge.svg)](https://github.com/ma1069/AIdle/actions/workflows/ci.yml)
+[![Deploy](https://github.com/ma1069/AIdle/actions/workflows/deploy.yml/badge.svg)](https://github.com/ma1069/AIdle/actions/workflows/deploy.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Vue 3](https://img.shields.io/badge/Vue-3.4+-4FC08D?logo=vue.js&logoColor=white)](https://vuejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.2+-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.0+-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+
+🌐 **Live Demo**: [https://ma1069.github.io/AIdle/](https://ma1069.github.io/AIdle/)
 
 A modern Vue 3 frontend application built with Composition API, TypeScript, and shadcn/ui components. Features automated CI/CD pipeline with GitHub Actions for testing, building, and deploying to GitHub Pages.
 
