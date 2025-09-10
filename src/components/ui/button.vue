@@ -1,7 +1,7 @@
 <template>
   <button
     :class="cn(buttonVariants({ variant, size }), $attrs.class as string)"
-    v-bind="$attrs"
+    v-bind="buttonAttrs"
   >
     <slot />
   </button>
@@ -10,6 +10,7 @@
 <script setup lang="ts">
 import { type VariantProps, cva } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
+import { useAttrs, computed } from 'vue'
 
 const buttonVariants = cva(
   'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
@@ -46,4 +47,10 @@ interface Props {
 }
 
 defineProps<Props>()
+
+const attrs = useAttrs()
+const buttonAttrs = computed(() => {
+  const { class: _, ...rest } = attrs
+  return rest
+})
 </script>
