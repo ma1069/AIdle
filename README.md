@@ -1,3 +1,5 @@
+[![Deploy to GitHub Pages](https://github.com/ma1069/AIdle/actions/workflows/deploy.yml/badge.svg)](https://github.com/ma1069/AIdle/actions/workflows/deploy.yml)
+
 # Vue 3 Frontend App
 
 A modern Vue 3 frontend application built with Composition API, TypeScript, and shadcn/ui components. Features automated CI/CD pipeline with GitHub Actions for testing, building, and deploying to GitHub Pages.
