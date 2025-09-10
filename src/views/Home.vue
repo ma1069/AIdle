@@ -54,10 +54,10 @@
     </div>
 
     <div class="text-center">
-      <Button @click="incrementCounter" class="mr-4">
-        Count: {{ counter }}
+      <Button @click="increment" class="mr-4">
+        Count: {{ count }}
       </Button>
-      <Button variant="outline" @click="resetCounter">
+      <Button variant="outline" @click="reset">
         Reset
       </Button>
     </div>
@@ -65,7 +65,7 @@
 </template>
 
 <script setup lang="ts">
-import { useCounterStore } from '@/stores/counter'
+import { ref } from 'vue'
 import Card from '@/components/ui/card.vue'
 import CardContent from '@/components/ui/card-content.vue'
 import CardDescription from '@/components/ui/card-description.vue'
@@ -73,14 +73,15 @@ import CardHeader from '@/components/ui/card-header.vue'
 import CardTitle from '@/components/ui/card-title.vue'
 import Button from '@/components/ui/button.vue'
 
-const counterStore = useCounterStore()
-const { counter, increment, reset } = counterStore
+// Simple counter state using Composition API
+const count = ref(0)
 
-const incrementCounter = () => {
-  increment()
+// Simple functions
+const increment = () => {
+  count.value++
 }
 
-const resetCounter = () => {
-  reset()
+const reset = () => {
+  count.value = 0
 }
 </script>
