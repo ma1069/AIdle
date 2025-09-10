@@ -14,5 +14,5 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
   },
-  base: process.env.NODE_ENV === 'production' ? '/vue3-frontend-app/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/AIdle/' : '/',
 })
