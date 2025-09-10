@@ -1,5 +1,5 @@
 <template>
-  <p :class="cn('text-sm text-muted-foreground', $attrs.class)" v-bind="$attrs">
+  <p :class="cn('text-sm text-muted-foreground', $attrs.class as string)" v-bind="$attrs">
     <slot />
   </p>
 </template>

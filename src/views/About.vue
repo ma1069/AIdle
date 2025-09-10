@@ -59,5 +59,8 @@
 </template>
 
 <script setup lang="ts">
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import Card from '@/components/ui/card.vue'
+import CardContent from '@/components/ui/card-content.vue'
+import CardHeader from '@/components/ui/card-header.vue'
+import CardTitle from '@/components/ui/card-title.vue'
 </script>

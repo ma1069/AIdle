@@ -66,8 +66,12 @@
 
 <script setup lang="ts">
 import { useCounterStore } from '@/stores/counter'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+import Card from '@/components/ui/card.vue'
+import CardContent from '@/components/ui/card-content.vue'
+import CardDescription from '@/components/ui/card-description.vue'
+import CardHeader from '@/components/ui/card-header.vue'
+import CardTitle from '@/components/ui/card-title.vue'
+import Button from '@/components/ui/button.vue'
 
 const counterStore = useCounterStore()
 const { counter, increment, reset } = counterStore

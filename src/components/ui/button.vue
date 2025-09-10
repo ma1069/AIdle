@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="cn(buttonVariants({ variant, size }), $attrs.class)"
+    :class="cn(buttonVariants({ variant, size }), $attrs.class as string)"
     v-bind="$attrs"
   >
     <slot />
